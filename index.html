@@ -1,3 +1,6 @@
+<!--http://localhost/sitealgo/WebsiteAlgo/index.html-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +50,21 @@
           <div class="row">
             <div class="home-info padd-15">
               <h3 class="hello">Hello, we are <span class="name" style="font-family: Cascadia Code, sans-serif">Algo Interactive</span></h3>
-              <h3 class="my-profession">We are <span class="type"></span></h3>
+
+              <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+              <script>
+                                  
+                  var typingEffect = new Typed(".typed", {
+                      Strings : ["Software Engineers", "VR Developers", "Full Stack Engineers", "Game Developers"],
+                      loop : true,
+                      typeSpeed : 50,
+                      backSpeed : 40,
+                      startDelay : 500,
+                      backDelay: 700
+                  })
+              </script>
+            
+              <h3 class="my-profession">We are <span class="typed">Software</span></h3>
               <p>We are a Software company based from the Netherlands, we make and develop software since its our passion. Because its our passion we will make sure the product is in an immaculate state and will be very modulair for future endeavors. Besides our freelance work, we also develop VR gaming titles</p>
               <a href="#about" class="btn">Be the difference</a>
             </div>
@@ -636,7 +653,7 @@
   </div>
   <!-- ===== Style Switcher End ===== -->
   <!-- ===== JS Files ===== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" ></script>
   <script src="js/script.js"></script>
   <script src="js/style-switcher.js"></script>
 </body>
